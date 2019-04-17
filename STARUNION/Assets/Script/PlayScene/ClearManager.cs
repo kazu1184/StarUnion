@@ -17,10 +17,15 @@ public class ClearManager : MonoBehaviour
     TrapezoidText set_text;
     //Time用
     GameObject time;
+    //星の色を変える
+    [SerializeField]
+    ClearStarManager csm;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
         //スコアにタイムを渡す
         time = GameObject.Find("TimeContollor");
         //台形を探す
@@ -60,6 +65,8 @@ public class ClearManager : MonoBehaviour
             {
                 //データの保存
                 SharedData.instance.clear_time = time.GetComponent<TimeContollor>().GetTime();
+                //クリアアニメーション
+                csm.OnActive();
 
                 SceneManager.LoadScene("ResultScene");
             }
