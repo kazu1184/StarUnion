@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 448}
   m_MaxSize: {x: 18008, y: 14024}
   vertical: 0
-  controlID: 147
+  controlID: 144
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 30
+  controlID: 83
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,9 +189,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 201.48631, y: 457.90997, z: 3.4375}
+    m_Target: {x: 184.12065, y: 460.38757, z: 3.1036487}
     speed: 2
-    m_Value: {x: 201.48631, y: 457.90997, z: 3.4375}
+    m_Value: {x: 184.12065, y: 460.38757, z: 3.1036487}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -223,9 +223,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22
+    m_Target: 55.342503
     speed: 2
-    m_Value: 22
+    m_Value: 55.342503
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 348}
   m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
-  controlID: 148
+  controlID: 145
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 324}
   m_MaxSize: {x: 10002, y: 14024}
   vertical: 1
-  controlID: 105
+  controlID: 70
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -629,19 +629,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/PlayScene
+    - Assets/Sprite
   m_ViewMode: 1
   m_StartGridSize: 77
   m_LastFolders:
-  - Assets/Script/PlayScene
+  - Assets/Sprite
   m_LastFoldersGridSize: 77
-  m_LastProjectPath: C:\Users\S182184\Documents\Unity\STARUNION
+  m_LastProjectPath: C:\Users\S182184\Documents\StarUnion\STARUNION
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68280000
-    m_LastClickedID: 10344
+    m_SelectedIDs: 9a260000
+    m_LastClickedID: 9882
     m_ExpandedIDs: 000000003a260000d6260000ba27000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 7626000066220000ae260000c84f000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -722,6 +722,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 63}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 77
   m_DirectoriesAreaWidth: 150
