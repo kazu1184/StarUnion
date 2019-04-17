@@ -136,7 +136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.213581, y: -1.9659202, z: 135.17676}
+  m_LocalPosition: {x: 5.213581, y: -1.9659202, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1241019066}
@@ -1687,7 +1687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241019065}
   m_LocalRotation: {x: -0, y: -0, z: 0.58620787, w: 0.81016076}
-  m_LocalPosition: {x: -176, y: -389, z: -135.17676}
+  m_LocalPosition: {x: -176, y: -389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1823600}
@@ -1915,7 +1915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534783927}
   m_LocalRotation: {x: 0, y: -0, z: 0.95105654, w: -0.30901685}
-  m_LocalPosition: {x: 99, y: -588, z: -135.17676}
+  m_LocalPosition: {x: 99, y: -588, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1823600}
@@ -2143,7 +2143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723175642}
   m_LocalRotation: {x: 0, y: -0, z: 0.594823, w: -0.80385673}
-  m_LocalPosition: {x: 167, y: -393, z: -135.17676}
+  m_LocalPosition: {x: 167, y: -393, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1823600}
@@ -2422,7 +2422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741541443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -266, z: -135.17676}
+  m_LocalPosition: {x: -4, y: -266, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1823600}
@@ -3108,7 +3108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961730357}
   m_LocalRotation: {x: 0, y: 0, z: 0.9563047, w: 0.2923718}
-  m_LocalPosition: {x: -107, y: -589, z: -135.17676}
+  m_LocalPosition: {x: -107, y: -589, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1823600}

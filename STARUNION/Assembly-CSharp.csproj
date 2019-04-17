@@ -63,6 +63,7 @@
     <Compile Include="Assets\Script\PlayScene\Animation.cs" />
     <Compile Include="Assets\Script\PlayScene\AudioManager.cs" />
     <Compile Include="Assets\Script\PlayScene\ClearManager.cs" />
+    <Compile Include="Assets\Script\PlayScene\ClearStarManager.cs" />
     <Compile Include="Assets\Script\PlayScene\InitialRespawn.cs" />
     <Compile Include="Assets\Script\PlayScene\MoveTriangle.cs" />
     <Compile Include="Assets\Script\PlayScene\PauseTextContoller.cs" />
