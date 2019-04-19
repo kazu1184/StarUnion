@@ -64,4 +64,9 @@ public class TakeOrverText : MonoBehaviour
     {
         return original_obj;
     }
+
+    public void OffActive()
+    {
+        gameObject.SetActive(false);
+    }
 }

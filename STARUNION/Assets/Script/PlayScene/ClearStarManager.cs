@@ -38,6 +38,5 @@ public class ClearStarManager : MonoBehaviour
             star[i].SetActive(true);
             start = true;
         }
-        //if(cout == 0)
     }
 }
