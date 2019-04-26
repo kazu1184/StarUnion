@@ -83,11 +83,11 @@ public class ClearManager : MonoBehaviour
         }
         else
         {
-            bool temp = animation.AnimationClear();
-            if (temp)
-            {
-                //SceneManager.LoadScene("ResultScene");
-            }
+            //bool temp = animation.AnimationClear();
+            //if (temp)
+            //{
+            //    //SceneManager.LoadScene("ResultScene");
+            //}
         }
     }
 }
