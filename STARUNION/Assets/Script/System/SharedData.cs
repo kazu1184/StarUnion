@@ -3,10 +3,11 @@
 /// </summary>
 public class SharedData
 {
-    //インスタンス化
+    //シングルトン
     public static readonly SharedData instance = new SharedData();
 
     //クリアした時のタイム
     public int clear_time;
+    //ステージの保管
     public int num_stage;
 }

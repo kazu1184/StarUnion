@@ -19,6 +19,11 @@ public class ClearManager : MonoBehaviour
     GameObject time;
     //アニメーション用
     Animation animation;
+    //パーティクル
+    [SerializeField]
+    ParticleSystem particle;
+
+    bool isCleared;
 
 
     // Start is called before the first frame update
@@ -42,37 +47,46 @@ public class ClearManager : MonoBehaviour
             //childe_triangle[i] = triangle[i];
             star[i] = triangle[i].GetComponent<TakeOrverText>();
         }
+
+        isCleared = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i=0;i<5;i++)
+        if (isCleared == false)
         {
-            //台形に三角形がくっついているかつ、まだ足されたことがないか
-            if(star[i].gameObject.activeInHierarchy != false &&
-               star[i].GetFlag() != true)
+            for (int i = 0; i < 5; i++)
             {
-                //計算
-                set_text.SetSubtraction(star[i].GetNum());
-                //足されたフラグを立たせる
-                star[i].SetFlag(true);
+                //台形に三角形がくっついているかつ、まだ足されたことがないか
+                if (star[i].gameObject.activeInHierarchy != false &&
+                   star[i].GetFlag() != true)
+                {
+                    //計算
+                    set_text.SetSubtraction(star[i].GetNum());
+                    //足されたフラグを立たせる
+                    star[i].SetFlag(true);
+                }
             }
 
             //クリアの数字と合計値が等しくなったらクリアシーンに遷移するかつ星が完成している
-            if (set_text.GetClear()== 0 && star[0].GetFlag() != false && 
-                star[1].GetFlag() != false && star[2].GetFlag() != false && 
+            if (set_text.GetClear() == 0 && star[0].GetFlag() != false &&
+                star[1].GetFlag() != false && star[2].GetFlag() != false &&
                 star[3].GetFlag() != false && star[4].GetFlag() != false)
             {
+                isCleared = true;
                 //データの保存
                 SharedData.instance.clear_time = time.GetComponent<TimeContollor>().GetTime();
-
-                bool temp = animation.AnimationClear();
-                
-                if(temp)
-                {
-                    SceneManager.LoadScene("ResultScene");
-                }
+                particle.Play();
+                Debug.Log("particle.Play()");
+            }
+        }
+        else
+        {
+            bool temp = animation.AnimationClear();
+            if (temp)
+            {
+                //SceneManager.LoadScene("ResultScene");
             }
         }
     }

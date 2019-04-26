@@ -22,6 +22,7 @@ public class StagTtransition : MonoBehaviour
             int num = temp.GetComponent<OffStar>().num_stage;
             //データの保存
             SharedData.instance.num_stage = num;
+
             SceneManager.LoadScene("PlayScene");
         }
     }
