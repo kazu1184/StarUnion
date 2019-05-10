@@ -8,12 +8,18 @@ public class TriangleText : MonoBehaviour
 {
     [SerializeField]
     Text num_tri;
+    //音用
+    [SerializeField]
+    AudioClip audio_clip;
+    AudioSource audio_source;
     int num; 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject main_camera = GameObject.Find("Main Camera");
+        audio_source = main_camera.GetComponent<AudioSource>();
+        Debug.Log(audio_source);
     }
 
     // Update is called once per frame
@@ -41,5 +47,12 @@ public class TriangleText : MonoBehaviour
     public int GetNum()
     {
         return this.num;
+    }
+
+    //音を鳴らす
+    public void OnAudio()
+    {
+        audio_source.PlayOneShot(audio_clip);
+        Debug.Log(audio_clip);
     }
 }

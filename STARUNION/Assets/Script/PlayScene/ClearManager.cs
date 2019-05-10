@@ -8,7 +8,6 @@ public class ClearManager : MonoBehaviour
     //星となる三角形
     [SerializeField]
     List<GameObject> triangle;
-    //GameObject[] childe_triangle;
     //GetCompornent用
     TakeOrverText[] star;
     //五角形
@@ -23,7 +22,9 @@ public class ClearManager : MonoBehaviour
     [SerializeField]
     ParticleSystem particle;
 
-    bool isCleared;
+    bool is_cleared;
+
+    int anime_time;
 
 
     // Start is called before the first frame update
@@ -48,13 +49,13 @@ public class ClearManager : MonoBehaviour
             star[i] = triangle[i].GetComponent<TakeOrverText>();
         }
 
-        isCleared = false;
+        is_cleared = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isCleared == false)
+        if (is_cleared == false)
         {
             for (int i = 0; i < 5; i++)
             {
@@ -74,20 +75,22 @@ public class ClearManager : MonoBehaviour
                 star[1].GetFlag() != false && star[2].GetFlag() != false &&
                 star[3].GetFlag() != false && star[4].GetFlag() != false)
             {
-                isCleared = true;
+                is_cleared = true;
                 //データの保存
                 SharedData.instance.clear_time = time.GetComponent<TimeContollor>().GetTime();
                 particle.Play();
-                Debug.Log("particle.Play()");
             }
         }
         else
         {
-            //bool temp = animation.AnimationClear();
-            //if (temp)
-            //{
-            //    //SceneManager.LoadScene("ResultScene");
-            //}
+            animation.AnimationClear();
+
+            anime_time++;
+
+            if(anime_time >= 240)
+            {
+                SceneManager.LoadScene("ResultScene");
+            }
         }
     }
 }

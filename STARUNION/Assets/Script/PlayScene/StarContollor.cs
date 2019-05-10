@@ -25,6 +25,10 @@ public class StarContollor : MonoBehaviour
         {
             TakeOrverText values_text = star_value.GetComponent<TakeOrverText>();
             TriangleText hit_triangle_text = hit_obj.GetComponent<TriangleText>();
+
+            //音を鳴らす
+            hit_triangle_text.OnAudio();
+
             if (values_text != null && hit_triangle_text != null)
             {
                 if (star_value.activeInHierarchy != true)
